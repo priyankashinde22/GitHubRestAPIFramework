@@ -1,6 +1,6 @@
 package com.github.responsePOJO;
 
-
+//new
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -10,27 +10,17 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown=true)
-public class GetDataResponse {
-    @JsonProperty(value = "full_name")
-    public String full_name;
-    
-    
-    @JsonProperty(value = "visibility")
-    public String visibility;
-    
-    
-    @JsonProperty(value = "name")
-    public String name;  
-    @JsonProperty(value = "login")
+public class OwnerPOJO {
+
+	@JsonProperty(value = "login")
     public String login;
     @JsonProperty(value = "type")
     public String type;
-    
+
 }
